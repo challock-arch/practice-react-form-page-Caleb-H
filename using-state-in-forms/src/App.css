@@ -1,0 +1,21 @@
+.form-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: left;
+}
+ .preview, .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid black;
+    margin: .5rem auto;
+    padding: .5rem;
+    border-radius: .5rem;
+    width:80%;
+}
+
+#name, #email, #feedback {
+    text-align: left;
+}
