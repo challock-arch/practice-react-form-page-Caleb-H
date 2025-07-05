@@ -1,21 +1,37 @@
-.form-container {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    justify-content: space-evenly;
-    text-align: left;
-}
- .preview, .form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border: 1px solid black;
-    margin: .5rem auto;
-    padding: .5rem;
-    border-radius: .5rem;
-    width:80%;
+form {
+    display: flexbox;
 }
 
-#name, #email, #feedback {
-    text-align: left;
+p {
+    display: table-row;
+}
+
+label, input, textarea {
+    display: table-cell;
+    width: 400px;
+}
+
+input, textarea {
+    border-radius: .2rem;
+    border: 1px solid slategray
+}
+
+label {
+    text-align: right;
+    
+}
+
+button {
+    margin-top: 25px;
+    width: 500px;
+    border-radius: .75rem;
+    border-color:rgba(0, 0, 0, 0.15);
+}
+
+button:hover {
+    background-color: rgba(39, 189, 22, 0.5);
+}
+
+.preview {
+    padding-top: 10px;
 }

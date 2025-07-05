@@ -18,47 +18,51 @@ function FormData() {
     }
 
     return (
-        <div className="form-container">
+        <>
+        <div className="container">
             <form className="form">
                 <h2>Form Submission</h2>
-            <div id="name">
-                <label>
-                    Name:
+                <p>
+                    <label htmlFor="name"> Name: </label>
                     <input
                         type="text"
                         name="name"
+                        id="name"
                         value={formData.name}
-                        onChange={handleChange} />
-                </label>     
-            </div>
-            <div id="email">
-                <label>
-                    Email:
+                        onChange={handleChange} 
+                    />
+                </p>
+                <p>
+                    <label htmlFor="email"> Email: </label>
                     <input
                         type="text"
                         name="email"
+                        id="email"
                         value={formData.email}
-                        onChange={handleChange} />
-                </label>
-            </div>
-            <div id="feedback">
-                <label>
-                    Feedback:
+                        onChange={handleChange} 
+                    />
+                </p>
+                <p>
+                    <label>
+                        Feedback:
+                    </label>
                     <textarea
                         type="textarea"
                         name="feedback"
                         value={formData.feedback}
-                        onChange={handleChange} />
-                </label>
-            </div>
+                        onChange={handleChange} 
+                    />
+                </p>
+                <button type="submit">Submit</button>
             </form>
-            <div className="preview">
-                <h2>Preview of Entry</h2>
-                <p>Name: {formData.name}</p>
-                <p>Email: {formData.email}</p>
-                <p>FeedBack: {formData.feedback}</p>
-            </div>
         </div>
+            <div className="container">
+                <h2>Preview of Entry</h2>
+                <h3 className="preview">Name: {formData.name}</h3>
+                <h3 className="preview">Email: {formData.email}</h3>
+                <h3 className="preview">FeedBack: {formData.feedback}</h3>
+            </div>
+        </>
     )
 }
 
